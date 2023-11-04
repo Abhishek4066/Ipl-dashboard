@@ -10,7 +10,7 @@ export const MatchSmallCard = ({match, teamName}) => {
     const isMatchWon = teamName === match.matchWinner;
     return (
         <div className={isMatchWon ? 'MatchSmallCard won-card' : 'MatchSmallCard lost-card'}>
-        <span className="vs">vs</span>
+        <span className="vs">VS</span>
         <h1><Link to={otherTeamRoute}>{otherTeam}</Link></h1>
         <p className="match-result">{match.matchWinner} won by {match.resultMargin} {match.result} </p>
         

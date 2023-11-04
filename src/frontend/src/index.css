@@ -13,14 +13,14 @@ body {
   font-family: 'Quattrocento', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
-  color: white;
+  background-color:#ADD8E6;
+  color: rgb(11, 2, 2);
   max-width: 1100px;
   margin: 0 auto;
 }
 
 a{
-  color: lightgrey;
+  color:#07077d  ;
 }
 
 

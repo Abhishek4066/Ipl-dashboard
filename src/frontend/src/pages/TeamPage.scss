@@ -28,9 +28,13 @@
   }
 
   .more-link {
-      align-self: center;
-      justify-self: center;
-      font-size: 1.5rem;
-
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    color: black !important; /* Set the text color to black with !important */
+  }
+  .win-loss-text {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin-right: 20px; /* Add spacing between text and chart */
   }
 }
