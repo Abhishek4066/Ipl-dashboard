@@ -2,6 +2,7 @@ import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes and Route
 import { TeamPage } from './pages/TeamPage';
 import { MatchPage } from './pages/MatchPage';
+import { HomePage } from './pages/HomePage';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
           <Route path="/teams/:teamName" element={<TeamPage />} /> {/* Use the "element" prop to define the component */}
 
           <Route path="/teams/:teamName/matches/:year" element={<MatchPage />} />
+
+          <Route path="/" element={<HomePage />}/>
         </Routes>
         
       </Router>
