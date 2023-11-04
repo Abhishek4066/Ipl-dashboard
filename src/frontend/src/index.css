@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Quattrocento:wght@400;700&display=swap');
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-
-
 body {
-
-  font-family: 'Quattrocento', serif;
+  font-family: 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#ADD8E6;
-  color: rgb(11, 2, 2);
+  background-color: #cfd6d8;
+  color: #333;
   max-width: 1100px;
   margin: 0 auto;
+
+  &.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
 }
 
-a{
-  color:#07077d  ;
+a {
+  color: #07077d;
 }
-
-
