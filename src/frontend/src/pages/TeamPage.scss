@@ -1,40 +1,71 @@
 .TeamPage {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
 
   .team-name-section {
+    grid-column: span 4;
+    justify-self: start;
+    align-self: end;
+
+    @media (min-width: 768px) {
       grid-column: span 3;
-      justify-self: start;
-      align-self: end;
+    }
   }
 
   .team-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
       font-size: 4rem;
       margin-bottom: 20px;
+    }
   }
 
   .win-loss-section {
-      justify-self: center;
+    justify-self: center;
+    padding: 20px;
+    text-align: center;
+
+    @media (min-width: 768px) {
       padding: 40px;
-      text-align: center;
+    }
   }
 
   .match-detail-section {
-      grid-column: span 4;
+    grid-column: span 4;
+
+    @media (min-width: 768px) {
+      grid-column: span 3;
+    }
   }
 
   .more-link {
     align-self: center;
     justify-self: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgb(186, 10, 10) !important; /* Set the text color to black with !important */
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
+
   .win-loss-text {
-    font-size: 1.5rem; /* Adjust font size as needed */
-    margin-right: 20px; /* Add spacing between text and chart */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-right: 10px; /* Add spacing between text and chart */
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      margin-right: 20px;
+    }
   }
 }
