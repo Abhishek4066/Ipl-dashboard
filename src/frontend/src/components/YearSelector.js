@@ -14,7 +14,7 @@ export const YearSelector = ({ teamName }) => {
 
   const handleYearChange = () => {
     // Update the URL when the "Go" button is clicked
-    window.location = `/teams/${teamName}/matches/${selectedYear}`;
+    window.location = `#/teams/${teamName}/matches/${selectedYear}`;
   };
 
   return (
