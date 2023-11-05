@@ -27,10 +27,10 @@ export const TeamPage = () => {
   }
   return (
     <div className="TeamPage">
-
-
      <div className='team-name-section'> 
-
+     <div className="home-button">
+        <Link to="/">Home</Link>
+      </div>
       <h1 className='team-name'>{team.teamName}</h1>
       
       </div>

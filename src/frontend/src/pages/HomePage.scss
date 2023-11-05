@@ -7,9 +7,13 @@
     padding: 20px;
     position: relative;
 
+
     &.dark-mode {
       background: #111;
     }
+
+    // Remove this line, as we've already set the background image
+    // background: #3498db; // A shade of blue (you can change this to any color you prefer)
 
     .dark-mode-button {
       background: transparent;
@@ -22,11 +26,11 @@
     }
 
     .app-name {
-      font-size: 3rem !important; // Add !important
+      font-size: 3rem !important;
       margin: 0;
       font-weight: 700;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-      text-align: center; /* Center the title horizontally */
+      text-align: center;
     }
 
     .app-description {
@@ -34,10 +38,9 @@
       font-weight: 500;
       margin-top: 10px;
     }
-
-    
   }
 
+  // The rest of the styles remain the same
   .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -46,24 +49,23 @@
   }
 
   .search-bar {
-    padding: 10px 20px; // Add !important
-    font-size: 1.5rem; // Add !important
-    width: 100%; // Ensure it spans the full width of the container
-    border: 2px solid #ccc; // Add a border for a clean look
-    border-radius: 5px; // Add some border radius for rounded corners
-    margin-top: 10px; // Add some top margin for spacing
-    background-color: #f5f5f5; // Add a light gray background color
-    color: #333; // Set the text color
-    transition: border-color 0.2s; // Add a transition effect for the border color
-  
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: border-color 0.2s;
+
     &:focus {
-      border-color: #007bff; // Change the border color on focus
-      outline: none; // Remove the default focus outline
+      border-color: #007bff;
+      outline: none;
     }
-  
+
     &::placeholder {
-      color: #999; // Style the placeholder text
+      color: #999;
     }
   }
-  
 }

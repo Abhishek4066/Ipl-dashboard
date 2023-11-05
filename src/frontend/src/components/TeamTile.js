@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './TeamTile.scss';
 
 export const TeamTile = ({ teamName, teamId }) => {
-    const teamImageURL = `/images/${teamName}.jfif`;
+    const teamImageURL = `/images/${teamName}.png`;
 
     return (
         <div className="TeamTile">
@@ -13,7 +13,8 @@ export const TeamTile = ({ teamName, teamId }) => {
                 </div>
                 <div className="team-details">
                     <h1>{teamName}</h1>
-                    <p>Experience the magic of {teamName}</p>
+                    <p>Discover the essence of {teamName} journey.</p>
+                    {/* <p>Experience the magic of {teamName}</p> */}
                 </div>
             </Link>
         </div>

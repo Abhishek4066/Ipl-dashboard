@@ -7,6 +7,7 @@ import { HomePage } from './pages/HomePage';
 function App() {
   return (
     <div className="App">
+      
       <Router>
         
         <Routes> {/* Wrap your routes within a <Routes> element */}

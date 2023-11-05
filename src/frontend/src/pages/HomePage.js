@@ -1,3 +1,4 @@
+// HomePage.js
 import React, { useEffect, useState } from 'react';
 import './HomePage.scss';
 import { TeamTile } from '../components/TeamTile';
@@ -33,7 +34,7 @@ export const HomePage = () => {
             <div className="header-section">
                 <div className="header-content">
                     <h1 className="app-name">IPL Dashboard</h1>
-                    <p className="app-description">Your go-to place for IPL information.</p>
+                    <p className="app-description">Explore IPL Like Never Before.</p>
                 </div>
                 <button onClick={() => setDarkMode(!darkMode)} className="dark-mode-button">
                     {darkMode ? "☀️" : "🌙"}
@@ -53,7 +54,7 @@ export const HomePage = () => {
                         <TeamTile
                             key={team.id}
                             teamName={team.teamName}
-                            teamLogoUrl={`/logos/${team.teamName}.png`}
+                            teamLogoUrl={`/images/${team.teamName}.png`}
                         />
                     ))}
             </div>
