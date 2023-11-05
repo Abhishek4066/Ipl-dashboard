@@ -10,4 +10,4 @@ Developed a web app using Spring Boot, Spring Batch, and React JS to showcase IP
 - <font color="red">React JS</font>
 
 ## Data Set Used
-[Dataset on Kaggle](https://www.kaggle.com/patrickb1912/ipl-complete-dataset-20082020/metadata)
+[Dataset on Kaggle](https://www.kaggle.com/datasets/vora1011/ipl-2022-match-dataset)
